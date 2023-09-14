@@ -1,4 +1,4 @@
-const { Sequelize } = require("sequelize");
+import { Sequelize } from "sequelize";
 
 // Replace these values with your own
 const sequelize = new Sequelize("testdatabase", "root", "", {
@@ -6,4 +6,4 @@ const sequelize = new Sequelize("testdatabase", "root", "", {
   dialect: "mysql", // The dialect for MySQL
 });
 
-module.exports = sequelize;
+export default sequelize;
